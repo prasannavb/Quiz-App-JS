@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/quiz-icon.jpg" type="image/x-icon">
+    <title>Quizard</title>
+</head>
+<body>
+<div class="navbar">
+    <div class="title">
+        <button onclick="Show()">View highscore</button>
+    </div>
+    <div class="time">
+        <h2 class="coder_name"></h2>
+    </div>
+</div>
+<div class="quiz-title">
+    <h1>Quizard</h1>
+</div>
+<div class="start-card">
+    <h2>Coding quiz challenge</h2>
+    <p>Try to answer the coding related question within the time limit</p>
+    <input type="text" id="name"  placeholder="Enter your name">
+    <button onclick="Start()" class="start-btn">Start Quiz</button>
+</div>
+
+<div class="question-card">
+    <h4 class="question"></h4>
+    <button class="opt1" id="1" onclick="Check(1)"></button>
+    <button class="opt2" id="2" onclick="Check(2)"></button>
+    <button class="opt3" id="3" onclick="Check(3)"></button>
+    <button class="opt4" id="4" onclick="Check(4)"></button>
+    <div class="buttons">
+        <button onclick="Prev()" class="prev">Previous</button>
+        <button onclick="Next()" class="next">Next</button>
+        <button onclick="Submit()"  class="submit">Submit</button>
+    </div>
+</div>
+
+<div class="result-card">
+    <h2>Scores</h2>
+    <h4 class="mark"></h4>
+    <button onclick="Retry()">Retry</button>
+</div>
+
+<div class="high_scores">
+    <h2>High Scores</h2>
+    <span class="no_mark"></span>
+    <table class="marks_table">
+        <tr class="name">
+            <th>Marks</th>
+        </tr>
+        <tr class="marks">
+            <th>Name</th>
+        </tr>
+    </table>
+    <button onclick="Back()">Go Back</button>
+</div>
+</body>
+<script src="index.js">
+
+</script>    
+</html>
